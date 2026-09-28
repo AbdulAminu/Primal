@@ -91,9 +91,15 @@ background: linear-gradient(90deg, rgba(99, 97, 97, 1) 0%, rgba(230, 230, 230, 1
   font-weight: 600;
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
+@media (min-width: 300px) and (max-width: 389px) {
   .wallpaper-grid {
     grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+}
+@media (min-width: 389px) and (max-width: 399px) {
+  .wallpaper-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
     gap: 10px;
   }
 }

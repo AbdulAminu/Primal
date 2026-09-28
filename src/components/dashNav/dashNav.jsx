@@ -16,7 +16,7 @@ export function DashNavbar({ onMenuClick }) {
               ☰
             </button>
 
-            <p className="itle">PRIMAL WALL<span>PAPERS</span></p>
+            <p className="itle">P WALL<span>PAPERS</span></p>
             </div>
       {user && (
   <>
