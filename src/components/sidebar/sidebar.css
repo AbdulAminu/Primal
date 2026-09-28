@@ -1,0 +1,143 @@
+.side{
+    width: fit-content;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: clamp(1rem, 4vw, 3rem);
+    box-shadow: 0px 0px 35px 13px rgba(0,0,0,0.75);
+    border: 2px solid rgb(134, 134, 134);
+    flex-shrink: 0;
+    overflow-y: auto;
+
+}
+.dy, .contenta a,
+.contentb a {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 12px 24px;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+   font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
+     font-weight: 700;
+     border-radius: 6px;
+}
+.dy{
+    font-weight: 700;
+    font-size: clamp(0.7rem, 2vw, 1rem);
+box-shadow: 0px 0px 35px 5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 35px 5px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 35px 5px rgba(0,0,0,0.75);
+padding: clamp(0.5rem, 2vw, 0.6rem);
+background-color: rgb(73, 73, 73);
+border-left: 2px solid rgb(199, 199, 199);
+border-bottom: 2px solid rgb(199, 199, 199);
+
+}
+/* sidebar.css */
+.side{
+  width: 260px;
+  height: 100vh;
+  flex-shrink: 0;
+ 
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .side {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: 999;
+  }
+  .side.open {
+    transform: translateX(0);
+  }
+}
+.contenta a,
+.contentb a {
+  display: block;
+  padding: 12px 24px;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  font-size: clamp(0.5rem, 1vw, 0.8rem);
+}
+
+.contenta a:hover,
+.contentb a:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.contenta a.active,
+.contentb a.active {
+  background-color: rgba(180, 30, 30, 0.15);
+  border-left-color: #b41e1e;
+  color: #fff;
+}
+.bt{
+    color: white;
+
+        text-align: center;
+    background-color: rgb(80, 80, 80);
+    padding: 0.5rem;
+    bottom: 2;
+    margin-bottom: 4rem;
+     font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
+     font-weight: 700;
+     border-left: 2px solid rgb(199, 199, 199);
+border-bottom: 2px solid rgb(199, 199, 199);
+border-radius: 6px;
+}
+.sidebar-backdrop {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+  }
+}
+
+@media(min-width:355px) and (max-width:600px){
+  .side{
+    width: 46%;
+  }
+  }
+@media(min-width:769px) and (max-width:900px){
+  .side{
+    width: 24%;
+  }
+}
+.category-link{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media(min-width:200px) and (max-width:354px){
+  .side{
+    width: 55%;
+  }
+}

@@ -1,0 +1,130 @@
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.f-body {
+  padding: 1rem;
+}
+
+.app-shel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background: #636161;
+background: linear-gradient(90deg, rgba(99, 97, 97, 1) 0%, rgba(230, 230, 230, 1) 100%);
+}
+
+.bod-row {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.ai-wallpaper-page {
+  padding: 1.2rem;
+  flex: 1;
+  overflow-x: auto;
+}
+
+.ai-wallpaper-page h1 {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallpaper-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.wallpaper-card {
+  width: 100%;
+  overflow: hidden;
+  background-color: #7a7a7a;
+  border-radius: 12px;
+  box-shadow: 0px 1px 35px 5px rgba(0,0,0,0.95);
+  -webkit-box-shadow: 0px 1px 35px 5px rgba(0,0,0,0.95);
+  -moz-box-shadow: 0px 1px 35px 5px rgba(0,0,0,0.95);
+}
+
+.wallpaper-card img {
+  width: 100%;
+  aspect-ratio: 9 / 16; /* adjust to match your actual wallpaper ratio, e.g. 16/9 or 9/16 */
+  object-fit: cover;
+  display: block;
+}
+
+.load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #ddd;
+  border-top: 5px solid #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.wall-head {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+  .wallpaper-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  .wall-head {
+    font-size: 0.8rem;
+  }
+
+  .wallpaper-grid {
+    grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+    gap: 12px;
+  }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .wall-head {
+    font-size: 0.8rem;
+  }
+
+  .wallpaper-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 12px;
+  }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .wall-head {
+    font-size: 0.8rem;
+  }
+
+  .wallpaper-grid {
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 12px;
+  }
+}

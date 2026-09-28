@@ -1,0 +1,81 @@
+
+.prof{
+    display: flex;
+    flex-direction: row;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 6px;
+    padding-right: 6px;
+    justify-content: space-between;
+    background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(0, 0, 0, 1) 73%
+  );
+  border: 2px solid rgb(117, 117, 117);
+  box-shadow: 0px 2px 23px 32px rgba(0, 0, 0, 0.73);
+  -webkit-box-shadow: 0px 2px 23px 32px rgba(0, 0, 0, 0.73);
+  -moz-box-shadow: 0px 2px 23px 32px rgba(0, 0, 0, 0.73);
+  z-index: 1000;
+}
+
+.xb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.itle {
+  font-size: clamp(0.5rem, 1.9vw, 2rem);
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+}
+.navtext{
+  font-size: clamp(0.7rem, 2vw, 2rem);
+    font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 800;
+}
+.username{
+    font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+font-size: clamp(0.5rem, 2vw, 2rem);
+box-shadow: 0px 0px 35px 5px rgba(148,148,148,0.75);
+-webkit-box-shadow: 0px 0px 35px 5px rgba(148,148,148,0.75);
+-moz-box-shadow: 0px 0px 35px 5px rgba(148,148,148,0.75);
+padding: clamp(0.4rem, 1.9vw, 0.5rem);
+background-color: rgb(169, 169, 169);
+border-bottom: 3px solid rgb(91, 22, 22);
+border-right: 3px solid rgb(91, 22, 22) ;
+
+border-radius: 1rem;
+}
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #575757;
+  font-size: 1.5rem;
+  cursor: pointer;
+   font-size: clamp(0.7rem, 2vw, 2rem);
+  padding: 0 12px;
+}
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+}
+.nj{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:0 ;
+}

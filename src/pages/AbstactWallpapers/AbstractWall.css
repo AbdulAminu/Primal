@@ -1,0 +1,37 @@
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.f-body{
+    padding: 1rem;
+}
+.app-shel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #4e4e4e;
+}
+
+.bod-row {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+.wallpaperCard {
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(95, 106, 117);
+  border-radius: 12px;
+  box-shadow: 0px 1px 35px 5px rgba(0,0,0,0.95);
+  -webkit-box-shadow: 0px 1px 35px 5px rgba(0,0,0,0.95);
+  -moz-box-shadow: 0px 1px 35px 5px rgba(0,0,0,0.95);
+}
+
+.wallpaperCard img {
+  width: 100%;
+  aspect-ratio: 9 / 16; /* adjust to match your actual wallpaper ratio, e.g. 16/9 or 9/16 */
+  object-fit: cover;
+  display: block;
+}

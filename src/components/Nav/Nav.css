@@ -1,0 +1,42 @@
+.Navig{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+.Navig a{
+    padding: 0.2rem;
+    font-size: 0.5rem;
+    font-family: "Merriweather", serif;
+  font-weight: 600;
+}
+.Navig a.active{
+   border: none;
+   border-bottom: 2px solid rgb(182, 5, 5);
+   background-color: none;
+}
+@media(min-width:769px){
+    .Navig{
+        display: none;
+       
+    }
+    .yn{
+        display: none;
+    }
+}
+.yn{
+    margin-bottom: 0.5rem;
+}
+
+@media(max-width:499px){
+    .Navig a{
+         font-size: 0.5rem;
+    }
+}
+@media(min-width:500px) and (max-width:769px){
+    .Navig a{
+         font-size: 0.7rem;
+    }
+}
+.w{
+    color: red;
+}
