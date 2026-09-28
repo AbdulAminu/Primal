@@ -197,8 +197,8 @@ transition: all 0.3s ease-in-out;
 
 @media(min-width:349px) and  (max-width:450px){
   .icp{
-    height: 5rem;
-    width: 5rem;
+    height:6rem;
+    width: 6rem;
   }
   .verl-txt{
     margin-top: 0;
@@ -229,8 +229,8 @@ transition: all 0.3s ease-in-out;
 }
 @media(min-width:250px) and  (max-width:348px){
   .icp{
-    height: 5rem;
-    width: 4.4rem;
+    height: 6rem;
+    width: 5.4rem;
   }
   .verl-txt{
     margin-top: 0;
@@ -263,8 +263,8 @@ transition: all 0.3s ease-in-out;
 }
 @media(min-width:451px) and  (max-width:600px){
   .icp{
-    height: 5rem;
-    width: 5rem;
+    height: 6rem;
+    width: 6rem;
   }
   .verl-txt{
     margin-top: 0;
