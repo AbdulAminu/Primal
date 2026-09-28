@@ -59,7 +59,7 @@ export default function Admin() {
           <h1 className="admin-title">
             <div className="im">
               <img
-                src="src/assets/Icon.png"
+                src="src/assets/ong.jpeg"
                 alt="Logo"
                 className="mx-auto h-14 w-auto"
               />
