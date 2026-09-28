@@ -30,7 +30,7 @@
 -moz-box-shadow: 0px 0px 34px 15px rgba(142,22,22,0.5);
 }
 .admin-title {
-  font-size: 2rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-bottom: 0.3rem;
   color: #831c1c;
@@ -110,4 +110,22 @@ background: linear-gradient(90deg, rgba(23, 22, 22, 1) 0%, rgba(148, 1, 1, 1) 10
     display: flex;
     justify-content: center;
     align-items: center;
+}
+@media(min-width:300px) and (max-width:500px){
+  .admin-title{
+    font-size: 1rem;
+  }
+  .admin-subtitle{
+    font-size: 0.9rem;
+  }
+  .lb{
+    font-size:0.7rem;
+  }
+  .l{
+    font-size:0.7rem;
+  
+  }
+  .submit-btn{
+    font-size: 0.5rem;
+  }
 }

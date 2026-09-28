@@ -60,7 +60,7 @@ export default function Admin() {
             <div className="im">
               <img
                 src="src/assets/ong.jpeg"
-                alt="Logo"
+                
                 className="mx-auto h-14 w-auto"
               />
             </div>
@@ -79,7 +79,7 @@ export default function Admin() {
         >
 
           <div className="form-group">
-            <label>Category</label>
+            <label className="lb">Category</label>
 
             <input
               type="text"
@@ -88,11 +88,12 @@ export default function Admin() {
               placeholder="Space, Nature, Cars..."
               onChange={handleChange}
               required
+              className="l"
             />
           </div>
 
           <div className="form-group">
-            <label>Image</label>
+            <label className="lb">Image</label>
 
             <input
               type="file"
@@ -100,6 +101,7 @@ export default function Admin() {
               accept="image/*"
               onChange={handleChange}
               required
+              className="l"
             />
           </div>
 
