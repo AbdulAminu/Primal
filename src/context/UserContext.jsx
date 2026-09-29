@@ -9,12 +9,23 @@ export function UserProvider({ children }) {
   const [loading, setLoading] = useState(true);
 
   const fetchUser = useCallback(() => {
-    setLoading(true);
-    return api.get('/me')
-      .then(res => setUser(res.data))
-      .catch(() => setUser(null))
-      .finally(() => setLoading(false));
-  }, []);
+  setLoading(true);
+
+  console.log("Token:", localStorage.getItem("token"));
+
+  return api
+    .get("me")
+    .then((res) => {
+      console.log("ME RESPONSE:", res.data);
+      setUser(res.data);
+    })
+    .catch((err) => {
+      console.log("ME ERROR:", err.response?.status, err.response?.data);
+      console.log("FULL ERROR:", err);
+      setUser(null);
+    })
+    .finally(() => setLoading(false));
+}, []);
 
   useEffect(() => {
     fetchUser();
@@ -26,5 +37,4 @@ export function UserProvider({ children }) {
     </UserContext.Provider>
   );
 }
-
 export const useUser = () => useContext(UserContext);
