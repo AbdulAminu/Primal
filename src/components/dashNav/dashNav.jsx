@@ -11,7 +11,7 @@ export function DashNavbar({ onMenuClick }) {
   return (
     <div>
       <div style={{ color: "red", fontSize: "30px" }}>
-        TEST {user?.username}
+        TEST {user?.username || "NO USER"}
       </div>
       <div className="prof">
         <div className="nj">
