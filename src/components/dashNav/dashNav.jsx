@@ -10,8 +10,8 @@ export function DashNavbar({ onMenuClick }) {
 
   return (
     <div>
-      <div style={{ color: "red", fontSize: "30px" }}>
-        TEST {user?.username || "NO USER"}
+      <div style={{ color: "red", fontSize: "20px" }}>
+        TOKEN: {localStorage.getItem("token") || "NO TOKEN"}
       </div>
       <div className="prof">
         <div className="nj">
